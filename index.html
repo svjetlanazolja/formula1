@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+
+<body onload="popuniSezone()">
+    <h1>Prikaz rezultata Formule 1</h1>
+    <select id="select" onchange="preuzmiPodatke(this.value)">
+        <option value="">Izaberi sezonu</option>
+    </select>
+    <table>
+        <thead>
+            <tr>
+                <th onclick="sortiraj('nacija')">Drzava</th>
+                <th onclick="sortiraj('ime')">Ime</th>
+                <th onclick="sortiraj('prezime')">Prezime</th>
+                <th onclick="sortiraj('bodovi')">Bodovi</th>
+                <th onclick="sortiraj('konstruktor')">Konstruktor</th>
+                <th onclick="sortiraj('link')">URL</th>
+            </tr>
+        </thead>
+        <tbody id="rezultati">
+
+        </tbody>
+    </table>
+</body>
+
+</html>
